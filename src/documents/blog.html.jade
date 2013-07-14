@@ -1,0 +1,18 @@
+---
+layout: default
+---
+.posts.pure-g
+  h1.pure-u-1.content-subhead Blog
+  each post in getCollection("posts").toJSON()
+    section.post.pure-u-1
+      header.post-header
+        h2.post-title.pure-u-1
+          a(href='#{post.url}')= post.title
+        p.post-meta.pure-u-1
+          | Posted #{post.date.toDateString()} under 
+          each tag in post.tags
+            - var tagClass = tag.replace(' ', '-').toLowerCase()
+            span.post-tag(class="post-tag-#{tagClass}")= tag
+      .post-description.pure-u-1
+        p= post.description
+      a(href='#{post.url}').pure-button.pure-button-primary Read More

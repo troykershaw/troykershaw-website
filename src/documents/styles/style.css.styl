@@ -1,0 +1,191 @@
+box-sizing(v)
+  -webkit-box-sizing v
+  -moz-box-sizing v
+  box-sizing v
+
+*
+  box-sizing(border-box)
+
+a
+  text-decoration none
+  color rgb(142, 142, 214)
+
+a:hover,
+a:focus
+  text-decoration underline
+
+p,
+code
+  font-size 120%
+
+#layout
+  padding-left 25%
+  position relative
+
+.sidebar
+  position fixed
+  top 0
+  bottom 0
+  width 25%
+  margin-left -25%
+  background rgb(24, 33, 61)
+  color #fff
+
+.header
+  margin 50% 2em 0
+  text-align right
+  p
+    line-height 130%
+
+.brand-title,
+.brand-tagline
+  margin 0
+
+.brand-title
+  font-weight 100
+  a
+    text-transform uppercase
+    color #fff
+
+.brand-tagline
+  font-weight 300
+  color rgb(142, 142, 214)
+
+#social-menu
+  background none
+  border none
+  margin-bottom 10px
+
+  ul
+    height 100%
+    li
+      a
+        color rgb(221,221,221)
+      a:hover,
+      a:focus
+        background none
+        text-decoration none
+
+        .icon-twitter-sign
+          color rgb(109,197,226)
+        .icon-rss-sign
+          color rgb(254,198,81)
+        .icon-envelope
+          color rgb(77,212,251)
+        .icon-github-sign
+          color rgb(255,255,255)
+
+.nav
+  .pure-menu
+    background none
+    border none
+    li
+      a
+        max-width 150px
+        margin 0 auto
+        background none
+        border 3px solid rgb(103, 103, 180)
+        color #fff
+        margin-top 1em
+
+      a:hover,
+      a:focus
+        background none
+        border 3px solid rgb(142, 142, 214)
+        color rgb(142, 142, 214)
+        text-decoration none
+
+.navlinks
+  font-size 120%
+  padding 2em 0 4em 0
+
+
+.navlinks-prev
+  width 45%
+  float left
+
+.navlinks-next
+  width 45%
+  float right
+
+.content-subhead
+  text-transform uppercase
+  color #aaa
+  border-bottom 1px solid #eee
+  padding 0.4em 0
+  font-size 120%
+  font-weight 500
+  letter-spacing 0.1em
+
+.content
+  padding 2em 3em 0
+
+.post
+  padding-bottom 2em
+
+.post-title
+  a
+    font-size 1.2em
+    color #222
+    margin-bottom 0.2em
+
+.post-avatar
+  border-radius 50px
+  float right
+  margin-left 1em
+
+.post-description
+  font-family Georgia, "Cambria", serif
+  color #444
+  line-height 1.8em
+
+.post-meta
+  color #999
+  font-size 90%
+  margin 0
+
+
+.post-images
+  margin 1em 0
+
+.post-image-meta
+  margin-top -3.5em
+  margin-left 1em
+  color #fff
+  text-shadow 0 1px 1px #333
+
+.footer
+  text-align center
+  padding 1em 0
+  font-size 80%
+  color #ccc
+
+.footer .pure-menu a:hover,
+.footer .pure-menu a:focus
+  background none
+
+@media (max-width: 841px)
+  .header
+    margin 50% 1em 0
+
+@media (max-width: 767px)
+  .sidebar
+    width 100%
+    position relative
+    margin 0
+  .header
+    text-align center
+    top auto
+    margin 3em auto
+    position static
+  .nav 
+    .pure-menu 
+      li
+        display inline-block
+  #layout
+    padding 0
+
+@media (max-width: 480px)
+  .content
+    padding 2em 1em 0
+  
