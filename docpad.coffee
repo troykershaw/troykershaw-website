@@ -24,10 +24,30 @@ docpadConfig = {
             nav: [
                 name: 'Home'
                 url: '/'
+                icon: 'icon-home'
             ,
                 name: 'Blog'
                 url: '/blog/'
+                icon: 'icon-pencil'
             ]
+            social: [
+                name: 'Github'
+                url: 'https://github.com/troykershaw'
+                icon: 'icon-github-sign'
+            ,
+                name: 'Twitter'
+                url: 'https://twitter.com/troykershaw'
+                icon: 'icon-twitter-sign'
+            ,
+                name: 'Feed'
+                url: 'http://feeds.feedburner.com/TroyKershaw'
+                icon: 'icon-rss-sign'
+            ,
+                name: 'Email'
+                url: 'mailto:#{site.email}'
+                icon: 'icon-envelope'
+            ]
+            
             googleAnalytics: 'UA-40785803-1'
 
         # -----------------------------

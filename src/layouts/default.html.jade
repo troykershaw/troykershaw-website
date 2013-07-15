@@ -16,18 +16,10 @@ html(lang='en')
         header.header.pure-u-1
           #social-menu.pure-menu.pure-menu-open.pure-menu-horizontal
             ul
-              li
-                a(href='https://github.com/troykershaw')
-                  i.icon-github-sign.icon-2x
-              li
-                a(href='https://twitter.com/troykershaw')
-                  i.icon-twitter-sign.icon-2x
-              li
-                a(href='http://feeds.feedburner.com/TroyKershaw')
-                  i.icon-rss-sign.icon-2x
-              li
-                a(href='mailto:#{site.email}')
-                  i.icon-envelope.icon-2x
+              each item in site.social
+                li
+                  a(href='#{item.url}', title='#{item.name}')
+                    i.icon-2x(class='#{item.icon}')
           hgroup            
             h1.brand-title
               a(href='/')= site.title
@@ -37,7 +29,9 @@ html(lang='en')
               ul
                 each item in site.nav
                   li
-                    a.pure-button.nav-button(href='#{item.url}') #{item.name}
+                    a.pure-button.nav-button(href='#{item.url}', title='#{item.name}')
+                      i(class='#{item.icon}')
+                      | #{item.name}
       .content.pure-u-1
         != content
         footer.footer

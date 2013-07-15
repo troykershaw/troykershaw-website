@@ -14,7 +14,11 @@ a:hover,
 a:focus
   text-decoration underline
 
-p,
+p
+  font-family Helvetica, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif
+  color #444
+  line-height 1.8em
+p,  
 code
   font-size 120%
 
@@ -81,10 +85,13 @@ code
     li      
       a
         margin 1em 0 0 auto
-        max-width 150px
+        width 150px
         background none
         border 3px solid rgb(103, 103, 180)
         color #fff
+        i
+          float left
+          font-size 150%
       a:hover,
       a:focus
         background none
@@ -130,11 +137,6 @@ code
   border-radius 50px
   float right
   margin-left 1em
-
-.post-description
-  font-family Georgia, "Cambria", serif
-  color #444
-  line-height 1.8em
 
 .post-meta
   color #999
