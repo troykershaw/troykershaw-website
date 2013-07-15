@@ -19,7 +19,7 @@ docpadConfig = {
             email: 'hello@troykershaw.com'
             emailUrl: 'mailto:hello@troykershaw.com'
             title: 'Troy Kershaw' 
-            description: 'A blog about F#, cycling (road bikes and mountain bikes) and creating music'         
+            description: 'A blog about F#'
             tagline: 'A blog about F#'
             nav: [
                 name: 'Home'
