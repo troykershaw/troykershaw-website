@@ -15,13 +15,13 @@ docpadConfig = {
             email: 'hello@troykershaw.com'
             title: 'Troy Kershaw' 
             description: 'A blog about F#, cycling (road bikes and mountain bikes) and creating music'         
-            tagline: 'A blog about F#, cycling and creating music.'
-            shortBio: '<t render="md">[F# is awesome](http://www.tryfsharp.org/ "Try F#"), I consider [myself a mountain biker](http://www.strava.com/athletes/tkershaw "My Strava page") but in reality I spend more time on my road bike, and I dabble in music creation using [Ableton Live](https://www.ableton.com/ "Ableton Live").</t>'
+            tagline: 'A blog about F#'
             nav: [
                 name: 'Blog'
                 url: '/blog'
             ,
             ]
+            googleAnalytics: 'UA-40785803-1'
 
         # -----------------------------
         # Helper Functions

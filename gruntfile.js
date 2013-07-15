@@ -6,9 +6,7 @@ module.exports = function(grunt) {
       combine: {
         files: {
           'out/styles/all.min.css': [
-            'out/vendor/pure-min.css',
             'out/vendor/highlight-tomorrow-night.css',
-            'out/vendor/font-awesome.css',
             'out/styles/post-tags.css',
             'out/styles/style.css'
           ]
@@ -39,6 +37,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-compress');
 
-  grunt.registerTask('default', ['cssmin', 'compress']);
+  grunt.registerTask('default', ['cssmin']);
 
 };
