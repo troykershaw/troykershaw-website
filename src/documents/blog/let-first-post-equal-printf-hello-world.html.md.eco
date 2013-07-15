@@ -1,15 +1,16 @@
 ---
-publish: true
 layout: post
 title: let firstPost = printf "Hello, world!"
 description: My first post! Find out what this blog is all about.
-date: 2013-07-13
+date: 2013-07-14
 tags:
 	- Me
 ---
-Of all the [Hello World](http://en.wikipedia.org/wiki/Hello_world_program "Hello World!")'s that I've written, this one seems closest to the truth. One of the goals I have for this blog is to communicate with the world; to share my experiences and thoughts in the hope that someone else can benefit from them. 
+Of all the [Hello World](http://en.wikipedia.org/wiki/Hello_world_program "Hello World!")'s that I've written, this one seems closest to the truth; I'm actually saying hello to the world.
 
-What experiences exactly? I'm a developer to the bone. I love to create through code; and I spend my working hours, and as many as I can outside of work, creating. So you can bet that most of what you'll see on here is developer related.
+I'm a developer to the bone. I love to create through code; I spend hours creating, both at work and home. So you can bet that most of what you'll see on here is developer related.
+
+ I'll use this blog to share my experiences and thoughts as a developer, in the hope that someone else can benefit from them. I’d love to learn from you, too. Feel free to contact me with a [comment](#comments "Comments"), on [Twitter](<%= @site.twitterUrl %> "Twitter"), or by [email](<%= @site.emailUrl%> "hello@troykershaw.com").
 
 If you have an interest in [F#](http://www.tryfsharp.org/ "Try F#"), [C#](https://en.wikipedia.org/wiki/C_Sharp_(programming_language "C#"), [Node.js](http://nodejs.org/ "Node.js") or the [Xamarin](http://xamarin.com/ "Xamarin") products, make sure you subscribe by pressing the feed icon that will be somewhere on the screen. (Darn responsive layouts, you never know where anything is!)
 
@@ -21,4 +22,5 @@ let firstPost = printf "Hello, world!";;
 Hello, world!
 val firstPost : unit = ()
 ```
+
 It's probably best not to take any chances.

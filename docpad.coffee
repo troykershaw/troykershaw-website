@@ -12,14 +12,21 @@ docpadConfig = {
         site:
             url: 'http://troykershaw.com'
             author: 'Troy Kershaw'
+            twitter: 'troykershaw'
+            twitterUrl: 'https://twitter.com/troykershaw'
+            github: 'troykershaw'
+            githubUrl: 'https://github.com/troykershaw'
             email: 'hello@troykershaw.com'
+            emailUrl: 'mailto:hello@troykershaw.com'
             title: 'Troy Kershaw' 
             description: 'A blog about F#, cycling (road bikes and mountain bikes) and creating music'         
             tagline: 'A blog about F#'
             nav: [
-                name: 'Blog'
-                url: '/blog'
+                name: 'Home'
+                url: '/'
             ,
+                name: 'Blog'
+                url: '/blog/'
             ]
             googleAnalytics: 'UA-40785803-1'
 
@@ -63,6 +70,8 @@ docpadConfig = {
         navlinks:
           collections:
             posts: -1
+        cleanurls:
+            trailingSlashes: true
 
 
 

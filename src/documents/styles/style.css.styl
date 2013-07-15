@@ -78,15 +78,13 @@ code
   .pure-menu
     background none
     border none
-    li
+    li      
       a
+        margin 1em 0 0 auto
         max-width 150px
-        margin 0 0 0 auto
         background none
         border 3px solid rgb(103, 103, 180)
         color #fff
-        margin-top 1em
-
       a:hover,
       a:focus
         background none
@@ -163,9 +161,6 @@ code
 .footer .pure-menu a:focus
   background none
 
-@media (max-width: 841px)
-  .header
-    margin 50% 1em 0
 
 @media (max-width: 767px)
   .sidebar
@@ -178,13 +173,18 @@ code
     margin 3em auto
     position static
   .nav 
-    .pure-menu 
+    margin-top 1em
+    .pure-menu
       li
         display inline-block
+        a
+          margin 0 .5em
   #layout
     padding 0
 
 @media (max-width: 480px)
+  .header
+    margin 1em auto
   .content
     padding 2em 1em 0
   
