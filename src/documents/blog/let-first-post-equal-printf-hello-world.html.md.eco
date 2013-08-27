@@ -12,7 +12,7 @@ I'm a developer to the bone. I love to create through code; I spend hours creati
 
  I'll use this blog to share my experiences and thoughts as a developer, in the hope that you can benefit from them. I’d love to learn from you, too. Feel free to contact me with a [comment](#comments "Comments"), on [Twitter](<%= @site.twitterUrl %> "Twitter"), or by [email](<%= @site.emailUrl%> "hello@troykershaw.com").
 
-If you have an interest in [F#](http://www.tryfsharp.org/ "Try F#"), [C#](https://en.wikipedia.org/wiki/C_Sharp_(programming_language "C#"), [Node.js](http://nodejs.org/ "Node.js") or the [Xamarin](http://xamarin.com/ "Xamarin") products, make sure you subscribe by pressing the feed icon that will be somewhere on the screen (darn responsive layouts, you never know where anything is!).
+If you have an interest in [F#](http://www.tryfsharp.org/ "Try F#"), [C#](https://en.wikipedia.org/wiki/C_Sharp_(programming_language "C#"), [Node.js](http://nodejs.org/ "Node.js") or the [Xamarin](http://xamarin.com/ "Xamarin") products, make sure you [subscribe to the feed](<%= @site.feedUrl%>).
 
 Of course, I may have missed the plot entirely; the [console](http://en.wikipedia.org/wiki/Command-line_interface "Command-line interface") is the world, and you say hello by writing text to it.
 
