@@ -5,7 +5,6 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     title= getPreparedTitle()
-    meta(name='description', content='#{getPreparedDescription()}') 
     meta(name='description', content='#{getPreparedDescription()}')
 
     meta(name='twitter:card', content='summary')
@@ -17,7 +16,6 @@ html(lang='en')
 
     link(rel='alternate', type='application/atom+xml', title='Latest blog posts | troykershaw.com', href='/atom.xml')  
     != getBlock("meta").toHTML()
-    != getBlock('styles').add(['http://yui.yahooapis.com/pure/0.2.0/pure-min.css','//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css','/styles/all.min.css']).toHTML()
     != getBlock('styles').add(['/styles/all.min.css']).toHTML()
 
   body
@@ -42,6 +40,7 @@ html(lang='en')
                     a.pure-button.nav-button(href='#{item.url}', title='#{item.name}')
                       i(class='#{item.icon}')
                       | #{item.name}
+      
       .content.pure-u-1
         != content
         footer.footer

@@ -28,7 +28,6 @@ docpadConfig = {
                 icon: 'icon-home'
             ,
                 name: 'Blog'
-                url: '/blog/'
                 url: '/blog'
                 icon: 'icon-pencil'
             ]
@@ -49,12 +48,10 @@ docpadConfig = {
                 icon: 'icon-twitter-sign'
             ,
                 name: 'Feed'
-                url: 'http://feeds.feedburner.com/TroyKershaw'
                 url: '/feed'
                 icon: 'icon-rss-sign'
             ,
                 name: 'Email'
-                url: 'mailto:#{site.email}'
                 url: 'mailto:hello@troykershaw.com'
                 icon: 'icon-envelope'
             ]
@@ -102,7 +99,6 @@ docpadConfig = {
           collections:
             posts: -1
         cleanurls:
-            trailingSlashes: true
             trailingSlashes: false
         highlightjs:
             aliases:
@@ -124,7 +120,6 @@ docpadConfig = {
             docpad = @docpad
             rootPath = docpad.config.rootPath
 
-            command = ["#{rootPath}/node_modules/.bin/grunt", 'default']
             command = ["#{rootPath}/node_modules/.bin/grunt", 'build']
             # Execute
             balUtil.spawn(command, {cwd:rootPath,output:true}, next)
