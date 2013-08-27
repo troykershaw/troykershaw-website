@@ -18,6 +18,7 @@ docpadConfig = {
             githubUrl: 'https://github.com/troykershaw'
             email: 'hello@troykershaw.com'
             emailUrl: 'mailto:hello@troykershaw.com'
+            feedUrl: '/feed'
             title: 'Troy Kershaw' 
             description: 'A blog about F#'
             tagline: 'A blog about F#'
@@ -28,6 +29,7 @@ docpadConfig = {
             ,
                 name: 'Blog'
                 url: '/blog/'
+                url: '/blog'
                 icon: 'icon-pencil'
             ]
             services:
@@ -101,6 +103,7 @@ docpadConfig = {
             posts: -1
         cleanurls:
             trailingSlashes: true
+            trailingSlashes: false
 
 
 
