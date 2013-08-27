@@ -48,6 +48,7 @@ docpadConfig = {
             ,
                 name: 'Feed'
                 url: 'http://feeds.feedburner.com/TroyKershaw'
+                url: '/feed'
                 icon: 'icon-rss-sign'
             ,
                 name: 'Email'
