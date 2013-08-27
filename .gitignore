@@ -1,4 +1,8 @@
+# Sensitive
+aws-keys.json
+
 # Docpad
+gzip
 out
 public
 
