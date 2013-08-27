@@ -53,6 +53,7 @@ docpadConfig = {
             ,
                 name: 'Email'
                 url: 'mailto:#{site.email}'
+                url: 'mailto:hello@troykershaw.com'
                 icon: 'icon-envelope'
             ]
             
