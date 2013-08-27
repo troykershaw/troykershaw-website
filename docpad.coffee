@@ -104,6 +104,9 @@ docpadConfig = {
         cleanurls:
             trailingSlashes: true
             trailingSlashes: false
+        highlightjs:
+            aliases:
+                csharp: 'cs'
 
 
 
