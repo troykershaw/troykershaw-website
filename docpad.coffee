@@ -30,6 +30,13 @@ docpadConfig = {
                 url: '/blog/'
                 icon: 'icon-pencil'
             ]
+            services:
+                twitterTweetButton: 'troykershaw'
+                twitterFollowButton: 'troykershaw'
+                githubFollowButton: 'troykershaw'
+                disqus: 'troykershaw'
+                googleAnalytics: 'UA-40785803-1'
+
             social: [
                 name: 'Github'
                 url: 'https://github.com/troykershaw'
