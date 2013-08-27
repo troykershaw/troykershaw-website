@@ -15,12 +15,30 @@ a:focus
   text-decoration underline
 
 p
+  font-weight 100
   font-family Helvetica, "Nimbus Sans L", "Liberation Sans", Arial, sans-serif
   color #444
   line-height 1.8em
 p,  
-code
+pre code
   font-size 120%
+
+p code
+  border 1px solid #8e8ed6
+  color #8e8ed6
+  padding 2px 4px
+
+blockquote
+  font-style italic
+  margin 0
+  padding-left 25px
+  border-left 8px solid #ddd
+
+h2
+  margin-top 2.5em
+
+.post-meta + h2
+  margin-top 0.83em
 
 #layout
   padding-left 25%
@@ -36,7 +54,7 @@ code
   color #fff
 
 .header
-  margin 50% 2em 0
+  margin 50% 2em 0 0
   text-align right
 
 .brand-title,
@@ -63,7 +81,8 @@ code
     li
       a
         color rgb(221,221,221)
-        padding 5px 0 5px 20px
+        margin 5px 0 5px 20px
+        padding 0
       a:hover,
       a:focus
         background none
@@ -85,7 +104,7 @@ code
     li      
       a
         margin 1em 0 0 auto
-        width 150px
+        width 120px
         background none
         border 3px solid rgb(103, 103, 180)
         color #fff
@@ -111,6 +130,7 @@ code
 .navlinks-next
   width 45%
   float right
+  text-align right
 
 .content-subhead
   text-transform uppercase
@@ -123,6 +143,7 @@ code
 
 .content
   padding 2em 3em 0
+  position relative
 
 .post
   padding-bottom 2em
@@ -172,7 +193,7 @@ code
   .header
     text-align center
     top auto
-    margin 3em auto
+    margin 1em auto
     position static
   .nav 
     margin-top 1em
@@ -188,5 +209,4 @@ code
   .header
     margin 1em auto
   .content
-    padding 2em 1em 0
-  
+    padding 2em 1em 0  
