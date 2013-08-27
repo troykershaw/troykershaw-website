@@ -5,6 +5,7 @@ aws-keys.json
 gzip
 out
 public
+temp
 
 # OSX
 .DS_Store
