@@ -1,11 +1,11 @@
 # License
 
-Unless stated otherwise; all works are Copyright © 2013+ [Troy Kershaw](http://troykershaw.com) <hello@troykershaw.com> and licensed [permissively](http://en.wikipedia.org/wiki/Permissive_free_software_licence) under the [MIT License](http://creativecommons.org/licenses/MIT/) for code and the [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/) for everything else (including content, media and design), enjoy!
+Unless stated otherwise; all works are Copyright © 2013+ [Troy Kershaw](http://troykershaw.com) (<hello@troykershaw.com>) and licensed [permissively](http://en.wikipedia.org/wiki/Permissive_free_software_licence) under the [MIT License](http://creativecommons.org/licenses/MIT/) for code and the [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/) for everything else (including content, media and design), enjoy!
 
 
 ## MIT License
 
-Copyright © 2013+ [Troy Kershaw](http://troykershaw.com) <hello@troykershaw.com>
+Copyright © 2013+ [Troy Kershaw](http://troykershaw.com) (<hello@troykershaw.com>)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
