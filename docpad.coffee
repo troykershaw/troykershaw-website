@@ -125,6 +125,7 @@ docpadConfig = {
             rootPath = docpad.config.rootPath
 
             command = ["#{rootPath}/node_modules/.bin/grunt", 'default']
+            command = ["#{rootPath}/node_modules/.bin/grunt", 'build']
             # Execute
             balUtil.spawn(command, {cwd:rootPath,output:true}, next)
             # Chain
