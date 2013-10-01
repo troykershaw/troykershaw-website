@@ -4,7 +4,7 @@
 	<title><%= @site.title %></title>
 	<link href="<%= @site.url %>/atom.xml" rel="self"/>
 	<link href="<%= @site.url %>"/>
-	<updated><%= @site.date.toISOString() %></updated>
+	<updated><%= @getCollection('posts').toJSON()[0].date.toISOString() %></updated>
 	<id><%= @site.url %></id>
 	<author>
 		<name><%= @site.author %></name>
