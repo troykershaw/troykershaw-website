@@ -4,7 +4,7 @@ title: ?? operator in F# (but for Options!)
 description: ?? in C# is expressive and awesome. In this post I show how you can do the same thing in F#, but for Options as well.
 date: 2013-08-21
 tags:
-	- FSharp
+	- F#
 	- Operators
 ---
 ## tl;dr
