@@ -1,13 +1,19 @@
 ---
 ignored: true
 layout: post
-title: How to host a static site using Cloudfront and the root domain
+title: How to host a static site on AWS S3
 description: From mid June Route 53 allows us to configure Alias (A) records that map to CloudFront. This means that we can host a static website on S3 and deliver it to the world with CloudFront using a root domain.
 date: 2013-07-15
 tags:
 	- S3
-	- CloudFront
+	- AWS
 ---
+## What's a static website and why should I care?
+You're looking at one, and it's fast and secure.
+
+
+
+S3 (or Simple Storage Service) is Amazon's file storage
 From mid June Route 53 allows us to configure Alias (A) records that map to CloudFront. This means that we can host a static website on S3 and deliver it to the world with CloudFront using a root domain.
 
 Here's how I set up troykershaw.com to do just that:
