@@ -48,9 +48,8 @@ module.exports = function(grunt) {
     aws: grunt.file.readJSON('aws-keys.json'), // Read the file
     aws_s3_files: [
       {expand: true, cwd: 'gzip', src: ['**/*.html'], dest: '', params: {CacheControl: 'max-age=0'}},
-      {expand: true, cwd: 'gzip', src: ['**/*.css'], dest: '', params: {CacheControl: 'max-age=7200'}},
-      {expand: true, cwd: 'gzip', src: ['**/*.js'], dest: '', params: {CacheControl: 'max-age=7200'}},
-      {expand: true, cwd: 'gzip', src: ['**/*.xml'], dest: '', params: {CacheControl: 'max-age=0'}},
+      {expand: true, cwd: 'gzip', src: ['**/*.css','**/*.js'], dest: '', params: {CacheControl: 'max-age=7200'}},
+      {expand: true, cwd: 'gzip', src: ['**/*.xml','**/*.xsl'], dest: '', params: {CacheControl: 'max-age=0'}},
       {expand: true, cwd: 'gzip/font', src: ['**'], dest: 'font', params: {CacheControl: 'max-age=86400'}},
       {expand: true, cwd: 'gzip', src: ['*.ico'], dest: '', params: {CacheControl: 'max-age=86400'}},
     ],
