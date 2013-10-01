@@ -11,7 +11,7 @@ tags:
 
 `??` in C# is expressive and awesome. You can do the same thing in F# for `option` values by defining the following operator:
 ``` fsharp
-let inline (|?) (a: 'a option) (b: 'a) = if a.IsSome then a.Value else b
+let inline (|?) (a: 'a option) b = if a.IsSome then a.Value else b
 ```
 which lets you do this:
 ``` fsharp
@@ -50,7 +50,7 @@ Console.WriteLine (nullDate ?? DateTime.MinValue);
 ## Do it in F\# ##
 F# doesn't have an equivalent operator, so let's define one.
 ``` fsharp
-let inline (|??) (a: 'a Nullable) (b: 'a) = if a.HasValue then a.Value else b
+let inline (|??) (a: 'a Nullable) b = if a.HasValue then a.Value else b
 ```
 Now you can use `|??` in F# just as you would in C#. Here's an example:
 ``` fsharp
@@ -62,7 +62,7 @@ We're on par with C#'s simplicity, but let's be honest, `null` is for the uneduc
 ## Option-coalescing (yep, just made that up)
 Let's do the same thing for **option** values, ie. **if [left] is Some then [left] else [right]**. Implementing this is as easy as it sounds, the hardest part is coming up with another operator.
 ``` fsharp
-let inline (|?) (a: 'a option) (b: 'a) = if a.IsSome then a.Value else b
+let inline (|?) (a: 'a option) b = if a.IsSome then a.Value else b
 ```
 Here we're defining a new operator `|?` that takes an `option` on the left and the default value on the right. Here's how you use it:
 ``` fsharp
