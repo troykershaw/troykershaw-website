@@ -19,7 +19,7 @@ docpadConfig = {
             email: 'hello@troykershaw.com'
             emailUrl: 'mailto:hello@troykershaw.com'
             feedUrl: '/feed'
-            title: 'Troy Kershaw' 
+            title: 'A blog about F# - Troy Kershaw' 
             description: 'A blog about F#'
             tagline: 'A blog about F#'
             nav: [
