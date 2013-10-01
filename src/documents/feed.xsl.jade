@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:atom="http://www.w3.org/2005/Atom" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+
+<xsl:output method="html"/>
+
+<xsl:template match="/atom:feed">
+html(lang='en')
+  head
+    title
+      <xsl:value-of select="atom:title"/>
+    != getBlock('styles').add(['/styles/all.min.css']).toHTML()
+
+
+  body
+    .pure-g-r
+      .content.pure-u-1
+        h1 Welcome to Troy Kershaw's blog feed
+        p
+          a(href="http://cloud.feedly.com/#subscription%2Ffeed%2F#{encodeURIComponent(site.url +'/atom.xml')}") Add this to Feedly!
+
+        h2 Do you feel lost?
+        p
+          :markdown
+            You're viewing the feed for my blog.
+
+            If this is your first visit, my name is Troy, and my blog is all about my adventures with F#.
+
+            If you put the url to this page in your feed reader you'll never miss anything I write again.
+            You can copy it from the url bar, or [right click on this link](/feed) and select *Copy Link Address*.
+
+            If you are still lost, you should probably just [go back to my website](/).
+
+            Thanks for reading!
+
+        h1 Here are my latest posts
+
+        <xsl:for-each select="atom:entry">
+        h1
+          a(href='{atom:link/@href}')
+            <xsl:value-of select="atom:title"/>
+        p
+          <xsl:value-of select="atom:content" disable-output-escaping="yes"/>
+
+        <xsl:if test="enclosure">
+        p
+          a(href='{enclosure/@url}')
+            Read More
+        </xsl:if>
+        </xsl:for-each>
+
+  != getBlock('scripts').toHTML()
+</xsl:template>
+</xsl:stylesheet>
