@@ -38,5 +38,6 @@ layout: default
             - var tagClass = tag.replace(' ', '-').toLowerCase()
             span.post-tag(class="post-tag-#{tagClass}")= tag
       .post-description.pure-u-1
-        p= post.description
-      a(href='#{post.url}').pure-button.pure-button-primary Read
+        p= post.description 
+          | 
+          a(href='#{post.url}') Keep reading...
