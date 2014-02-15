@@ -40,9 +40,25 @@ html(lang='en')
                     a.pure-button.nav-button(href='#{item.url}', title='#{item.name}')
                       i(class='#{item.icon}')
                       | #{item.name}
+                   
       
       .content.pure-u-1
+        gcse:searchresults
+        #search
+          gcse:searchbox 
+            p Search will appear here shortly
         != content
         footer.footer
           p &copy; 2013 #{site.title}
+
+    script.
+      (function() {
+        var cx = '013004865239519727906:ijxxy7cds70';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+        })();
     != getBlock('scripts').toHTML()
