@@ -10,6 +10,7 @@ module.exports = function(grunt) {
             'out/vendor/font-awesome.min.css',
             'out/vendor/highlight-tomorrow-night.css',
             'out/styles/post-tags.css',
+            'out/styles/search.css',
             'out/styles/style.css'
           ]
         }
@@ -24,12 +25,6 @@ module.exports = function(grunt) {
           'out/styles/post-tags.css',
           'out/styles/style.css'
         ]
-      }
-    },
-    uglify: {
-      build: {
-        src: 'out/styles/all.css',
-        dest: 'out/styles/all.min.css'
       }
     },
     compress: {
@@ -50,8 +45,7 @@ module.exports = function(grunt) {
       {expand: true, cwd: 'gzip', src: ['**/*.html'], dest: '', params: {CacheControl: 'max-age=0'}},
       {expand: true, cwd: 'gzip', src: ['**/*.css','**/*.js'], dest: '', params: {CacheControl: 'max-age=7200'}},
       {expand: true, cwd: 'gzip', src: ['**/*.xml','**/*.xsl'], dest: '', params: {CacheControl: 'max-age=0'}},
-      {expand: true, cwd: 'gzip/font', src: ['**'], dest: 'font', params: {CacheControl: 'max-age=86400'}},
-      {expand: true, cwd: 'gzip', src: ['*.ico'], dest: '', params: {CacheControl: 'max-age=86400'}},
+      {expand: true, cwd: 'gzip', src: ['**/*'], dest: '', params: {CacheControl: 'max-age=86400'}},
     ],
     aws_s3: {
       options: {
@@ -79,14 +73,13 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-aws-s3');
 
-  grunt.registerTask('build', ['cssmin','clean','compress']);
-  grunt.registerTask('deploy-staging', 'aws_s3:staging');
-  grunt.registerTask('deploy-prod', 'aws_s3:production');
+  grunt.registerTask('build', ['cssmin']);
+  grunt.registerTask('deploy-staging', ['clean','compress','aws_s3:staging']);
+  grunt.registerTask('deploy-prod', ['clean','compress','aws_s3:production']);
 
 };
