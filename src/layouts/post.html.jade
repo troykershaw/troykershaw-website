@@ -10,6 +10,8 @@ article
       each tag in document.tags
         - var tagClass = tag.replace(' ', '-').toLowerCase()
         span.post-tag(class="post-tag-#{tagClass}")= tag
+      a(href='#{getGithubPath()}',alt="Feel free to edit this post, particularly if you're fixing spelling mistakes!")  Edit this post
+    
     != content
 
     != getNavLinks()
