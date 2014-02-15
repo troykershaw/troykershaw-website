@@ -83,6 +83,10 @@ docpadConfig = {
             @site.keywords.concat(@document.keywords or []).join(', ')
 
 
+    # Ignore Custom Patterns
+    # Can be set to a regex of custom patterns to ignore from the scanning process
+    ignoreCustomPatterns: /DRAFT/
+
     # =================================
     # Collections
 
