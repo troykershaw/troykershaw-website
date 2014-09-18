@@ -83,7 +83,7 @@ docpadConfig = {
             @site.keywords.concat(@document.keywords or []).join(', ')
 
         getGithubPath: ->
-            "https://github.com/troykershaw/troykershaw-website/tree/master/src/documents/#{@document.relativePath}"
+            "https://github.com/troykershaw/troykershaw-website/edit/master/src/documents/#{@document.relativePath}"
 
     # Ignore Custom Patterns
     # Can be set to a regex of custom patterns to ignore from the scanning process
