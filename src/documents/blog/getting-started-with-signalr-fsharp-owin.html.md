@@ -1,23 +1,25 @@
 ---
 layout: post
 title: Getting Started with SignalR using F# and OWIN
-description:
+description: SignalR allows us to easily push messages back and forth between a client and server using websockets. In this post we're going to create a SignalR server and push some messages back and forth from a website. 
 date: 2015-12-23
 tags:
 	- SignalR
 	- F#
 	- OWIN
 ---
+
 [SignalR](http://signalr.net/) allows us to easily push messages back and forth between a client (usually a website) and server using websockets. All of the pain of creating a connection, keeping the connection alive, reconnecting, serialising and deserialising messages, plus lots, lots more is taken care of for you.
 
 In this post we're going to create a SignalR server and push some messages back and forth from a website. You can see the completed source at [github.com/troykershaw/signalr-fsharp-getting-started](https://github.com/troykershaw/signalr-fsharp-getting-started).
 
 Note: This will probably only run on Windows.
 
-## Create a new project
+## Get the project set up
 
 - Create a new console application. I chose to use .NET 4.6.1, but anything in the 4.x range should work.
 
+  
 ### Hello, Paket
 We're going to use Paket to download and manage our dependencies. Compared to nuget [Paket](https://fsprojects.github.io/Paket/) requires a little effort to set up for a new project but it's totally worth it. Here's how to do it, basically pulled straight from Paket's [Getting Started](https://fsprojects.github.io/Paket/getting-started.html) page
 
@@ -53,8 +55,7 @@ Now you've got everything you need for the rest of this blog post.
 ## Let's get the server running
 SignalR is part of the ASP.NET family and runs nicely in a standalone [OWIN](http://owin.org/) server, so let's do that.
 
-- Create a new file called `Signalr.fs` and put it above `Program.fs`.
-
+- Create a new file called `Signalr.fs` and put it above `Program.fs.
 - Here's all we need to get the server running, so paste it in
 
 ```fsharp
@@ -117,9 +118,7 @@ type Server (host:string) =
 We now have a server that serves static files. Let's start it.
 
 - In `Program.fs` add `let staticServer = Static.Server "http://localhost:8777"` after the SignalR server.
-
-- Create an `index.html` page and in its properties set __Copy to Output Directory__ to __Copy always__.
-
+- Create an `index.html` page and set the property __Copy to Output Directory__ to __Copy always__.
 - Also, paste in the following:
 
 ```html
@@ -386,7 +385,7 @@ It worked! Although the json is really, really ugly.
 }
 ```
 
-Look at all of those `Case`s and `Field`s. Yuk.
+Look at all of those `Case`s and `Field`s. Yuck.
 
 ## The good news and the bad news
 The good news is that we can serialise _and_ deserialise our Customer record into really clean json. The bad news is that you're going to have to wait for the next installment.
